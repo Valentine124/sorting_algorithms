@@ -13,14 +13,20 @@ void bubble_sort(int *array, size_t size)
 
 	for (i = 0; i < size; i++)
 	{
+		int swaped = 0;
+
 		for (j = 0; j < (size - i); j++)
 		{
 			if (array[j] > array[j + 1])
 			{
 				swap(&array[j], &array[j + 1]);
 				print_array(array, size);
+				swaped = 1;
 			}
 		}
+
+		if (!swaped)
+			break;
 	}
 }
 
