@@ -1,7 +1,5 @@
 #include "sort.h"
 
-void swap(int *first, int *sec);
-
 /**
  * bubble_sort - bubble sort implementation
  * @array: the array to sort
@@ -10,6 +8,11 @@ void swap(int *first, int *sec);
 void bubble_sort(int *array, size_t size)
 {
 	size_t i, j;
+
+	if (array == NULL)
+		return;
+	if (size < 2)
+		return;
 
 	for (i = 0; i < size; i++)
 	{
