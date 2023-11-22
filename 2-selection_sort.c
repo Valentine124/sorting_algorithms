@@ -42,8 +42,8 @@ void selection_sort(int *array, size_t size)
  */
 void swap(int *first, int *sec)
 {
-        int temp = *first;
+	int temp = *first;
 
-        *first = *sec;
-        *sec = temp;
+	*first = *sec;
+	*sec = temp;
 }
